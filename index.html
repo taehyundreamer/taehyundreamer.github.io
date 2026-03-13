@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Taehyun Lee | VC Partner Turned Entrepreneurship Professor & Researcher</title>
+    <meta name="description" content="Dr. Taehyun Lee — PhD researcher, former VC Partner (11 years, 30%+ ROI), Entrepreneurship Professor, and Innovation Center Founder. Research on startup ecosystems and the Industry-Region Fit Framework.">
+    <meta name="keywords" content="Taehyun Lee, venture capital professor, startup ecosystem, Industry-Region Fit Framework, entrepreneurship education, innovation center, VC partner professor, startup success factors, Microsoft Korea, Perpetiel Capital Partners">
+    <meta name="author" content="Dr. Taehyun Lee">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Dr. Taehyun Lee | VC Partner Turned Entrepreneurship Professor">
+    <meta property="og:description" content="PhD researcher bridging venture capital practice and entrepreneurship education. Former VC Partner (11 yrs), Professor, Innovation Center Founder.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://taehyundreamer.github.io">
+
+    <!-- Schema.org Person Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Dr. Taehyun Lee",
+        "givenName": "Taehyun",
+        "familyName": "Lee",
+        "honorificPrefix": "Dr.",
+        "honorificSuffix": "PhD",
+        "jobTitle": "Entrepreneurship Researcher & Former VC Partner",
+        "description": "PhD researcher, former VC Partner (11 years), Entrepreneurship Professor, and Innovation Center Founder specializing in startup ecosystems and the Industry-Region Fit Framework.",
+        "alumniOf": [
+            {"@type": "CollegeOrUniversity", "name": "Dongguk University", "department": "Technology Entrepreneurship Management"},
+            {"@type": "CollegeOrUniversity", "name": "Northeastern University", "department": "D'Amore-McKim School of Business"},
+            {"@type": "CollegeOrUniversity", "name": "Stanford University", "department": "Entrepreneurial Leadership"},
+            {"@type": "CollegeOrUniversity", "name": "Chung-Ang University", "department": "Business Administration"}
+        ],
+        "worksFor": [
+            {"@type": "Organization", "name": "Perpetiel Capital Partners"},
+            {"@type": "Organization", "name": "Microsoft"}
+        ],
+        "knowsAbout": ["Startup Ecosystems", "Venture Capital", "Entrepreneurship Education", "Innovation Management", "Industry-Region Fit Framework"],
+        "sameAs": [
+            "https://www.linkedin.com/in/taehyun-lee-2604532b/",
+            "https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7208066",
+            "https://orcid.org/0009-0007-9106-5115",
+            "https://scholar.google.com/citations?user=xWBs5KwAAAAJ"
+        ],
+        "url": "https://taehyundreamer.github.io"
+    }
+    </script>
+
+    <!-- ScholarlyArticle Markup -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "name": "The Institutional Safety Net: How Evolving Institutional Environments Shape the Industry-Region Fit Framework for Startup Performance",
+        "author": {"@type": "Person", "name": "Taehyun Lee"},
+        "datePublished": "2026",
+        "description": "Empirical analysis of 2,175 technology startups across five U.S. metropolitan regions, extending the Industry-Region Fit Framework with institutional support mechanisms.",
+        "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6409519"
+    }
+    </script>
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --primary: #1B4F72;
+            --primary-light: #2E86C1;
+            --accent: #E74C3C;
+            --bg: #FAFBFC;
+            --text: #2C3E50;
+            --text-light: #5D6D7E;
+            --border: #E8ECF1;
+            --white: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: var(--text);
+            background: var(--bg);
+            line-height: 1.7;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+            z-index: 100;
+            padding: 0 2rem;
+        }
+
+        nav .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
+        }
+
+        nav .logo {
+            font-family: 'Arial', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9rem;
+            color: var(--text-light);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        nav a:hover { color: var(--primary); }
+
+        /* Hero */
+        .hero {
+            margin-top: 64px;
+            padding: 5rem 2rem 4rem;
+            background: linear-gradient(135deg, var(--primary) 0%, #154360 100%);
+            color: var(--white);
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .hero .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid rgba(255,255,255,0.3);
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero h1 {
+            font-size: 2.4rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+
+        .hero .subtitle {
+            font-family: 'Arial', sans-serif;
+            font-size: 1.1rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hero .tagline {
+            font-size: 1rem;
+            opacity: 0.8;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            line-height: 1.6;
+        }
+
+        .hero .cta-links {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .hero .cta-links a {
+            font-family: 'Arial', sans-serif;
+            padding: 0.6rem 1.5rem;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 4px;
+            color: var(--white);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.2s;
+        }
+
+        .hero .cta-links a:hover {
+            background: rgba(255,255,255,0.15);
+            border-color: var(--white);
+        }
+
+        /* Main Content */
+        main {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        section {
+            padding: 3.5rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        section:last-child { border-bottom: none; }
+
+        h2 {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            color: var(--primary);
+            margin: 1.5rem 0 0.5rem;
+        }
+
+        p { margin-bottom: 1rem; }
+
+        .highlight-box {
+            background: var(--white);
+            border-left: 4px solid var(--primary-light);
+            padding: 1.5rem 2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        /* Stats Row */
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            margin: 2rem 0;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .stat .number {
+            font-family: 'Arial', sans-serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        .stat .label {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.8rem;
+            color: var(--text-light);
+            margin-top: 0.3rem;
+        }
+
+        /* Publications */
+        .pub-item {
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pub-item:last-child { border-bottom: none; }
+
+        .pub-title {
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.3rem;
+        }
+
+        .pub-meta {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .pub-badge {
+            display: inline-block;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.7rem;
+            padding: 0.15rem 0.5rem;
+            border-radius: 3px;
+            font-weight: 600;
+            margin-left: 0.5rem;
+        }
+
+        .badge-published { background: #D5F5E3; color: #1E8449; }
+        .badge-review { background: #FEF9E7; color: #B7950B; }
+        .badge-book { background: #EBE5FC; color: #6C3483; }
+
+        /* Timeline */
+        .timeline-item {
+            padding: 1.2rem 0 1.2rem 2rem;
+            border-left: 2px solid var(--border);
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 1.5rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--primary-light);
+        }
+
+        .timeline-period {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.8rem;
+            color: var(--primary-light);
+            font-weight: 600;
+        }
+
+        .timeline-role {
+            font-weight: 600;
+            margin: 0.2rem 0;
+        }
+
+        .timeline-org {
+            font-style: italic;
+            color: var(--text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .timeline-desc {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        /* Partnerships */
+        .partner-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .partner-item {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem 1.2rem;
+        }
+
+        .partner-item strong {
+            display: block;
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .partner-item span {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary);
+            color: rgba(255,255,255,0.8);
+            text-align: center;
+            padding: 2rem;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .stats { grid-template-columns: repeat(2, 1fr); }
+            .hero h1 { font-size: 1.8rem; }
+            nav ul { gap: 1rem; }
+            nav a { font-size: 0.8rem; }
+            .partner-grid { grid-template-columns: 1fr 1fr; }
+        }
+
+        @media (max-width: 480px) {
+            .stats { grid-template-columns: 1fr 1fr; }
+            .hero .cta-links { flex-direction: column; align-items: center; }
+            .partner-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="container">
+        <a href="#" class="logo">Dr. Taehyun Lee</a>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#teaching">Teaching</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#partnerships">Partners</a></li>
+            <li><a href="#cv">CV</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="hero">
+    <div class="hero-content">
+        <!-- Add your profile photo as profile.jpg in the same folder -->
+        <img src="profile.jpg" alt="Dr. Taehyun Lee" class="profile-photo" onerror="this.style.display='none'">
+        <h1>Dr. Taehyun Lee</h1>
+        <p class="subtitle">Corporate Strategist · VC Partner · Professor</p>
+        <p class="tagline">
+            Bridging 11 years of venture capital investing, 7 years of university teaching, and doctoral research on startup ecosystems to understand what makes entrepreneurial ventures succeed in different regional contexts.
+        </p>
+        <div class="cta-links">
+            <a href="#research">Research</a>
+            <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7208066" target="_blank">SSRN</a>
+            <a href="https://scholar.google.com/citations?user=xWBs5KwAAAAJ" target="_blank">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/taehyun-lee-2604532b/" target="_blank">LinkedIn</a>
+        </div>
+    </div>
+</div>
+
+<main>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About</h2>
+    <p>
+        I hold a rare combination of deep venture capital experience, Fortune 500 corporate strategy, hands-on university teaching, and rigorous academic research in entrepreneurship. Over the past three decades, I have invested in startups, led digital business strategy at Microsoft, taught thousands of students to think entrepreneurially, and developed new theoretical frameworks to explain why startups succeed in some regions but not others.
+    </p>
+
+    <div class="stats">
+        <div class="stat">
+            <div class="number">11</div>
+            <div class="label">Years as VC Partner</div>
+        </div>
+        <div class="stat">
+            <div class="number">30%+</div>
+            <div class="label">Portfolio ROI</div>
+        </div>
+        <div class="stat">
+            <div class="number">2,000+</div>
+            <div class="label">Students Mentored</div>
+        </div>
+        <div class="stat">
+            <div class="number">20%+</div>
+            <div class="label">Student Startup Rate</div>
+        </div>
+    </div>
+
+    <p>
+        My career began as an R&amp;D planning researcher at Hyundai Motor Company, followed by strategic roles at GM Korea and KBS Media. I then spent nearly a decade at Microsoft Korea in two separate stints &mdash; first as Executive Producer launching JoinsMSN, later as Product Marketing Manager for the APAC Regional Digital Store. In between, I spent over a decade as a Partner at Perpetiel Capital Partners, investing in AI, media, and digital technology startups. The patterns I observed in successful and failed ventures led me to academia, where I could study these dynamics systematically while sharing practical insights with the next generation of entrepreneurs.
+    </p>
+</section>
+
+<!-- RESEARCH -->
+<section id="research">
+    <h2>Research</h2>
+
+    <h3>Industry-Region Fit Framework</h3>
+    <div class="highlight-box">
+        <p>
+            My primary research introduces the <strong>Industry-Region Fit (IRF) Framework</strong>, which explains how the alignment between a startup's industry characteristics and its regional ecosystem features drives venture success. Using a dataset of 1,600 startups across four major U.S. innovation hubs (Silicon Valley, Boston, New York, Austin), this work provides empirical evidence that regional context is not merely a backdrop but an active determinant of startup outcomes.
+        </p>
+    </div>
+
+    <h3>Research Interests</h3>
+    <p>
+        Entrepreneurial ecosystems and venture performance, Industry-Region Fit framework, venture scaling dynamics, ethics and entrepreneurial behavior, institutional support mechanisms for entrepreneurship, entrepreneurship education.
+    </p>
+
+    <h3>Peer-Reviewed Journal Articles</h3>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            Created to Create: Entrepreneurial Behavior Reflecting Divine Creative Patterns
+            <span class="pub-badge badge-published">Published</span>
+        </p>
+        <p class="pub-meta">
+            Journal of Management, Spirituality &amp; Religion (JMSR), 2026 |
+            <a href="https://doi.org/10.51327/LLGX8563" target="_blank" style="color: var(--primary-light);">DOI</a>
+        </p>
+    </div>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            Dynamics of Industry-Region Fit: A Simulation-Based Analysis of How Entrepreneurial Ecosystems Influence Startup Performance
+            <span class="pub-badge badge-published">Published</span>
+        </p>
+        <p class="pub-meta">
+            Korean Journal of Entrepreneurship, 20(3), 61-101, 2025 |
+            DOI: 10.24878/tkes.2025.20.3.61
+        </p>
+    </div>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            Rethinking Startup Success: Ecosystem Acceleration and Resource Revaluation in Post-Pandemic Ventures (2015-2023)
+            <span class="pub-badge badge-published">Published</span>
+        </p>
+        <p class="pub-meta">
+            Asia-Pacific Journal of Business Venturing and Entrepreneurship, 20(3), 2025 |
+            DOI: 10.16972/APJBVE.20.3.202506.1
+        </p>
+    </div>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            An Analysis of Entrepreneurship Programs at U.S. Colleges and Universities: Focusing on Implications for Entrepreneurship Ecosystem of Korean Universities
+            <span class="pub-badge badge-published">Published</span>
+        </p>
+        <p class="pub-meta">
+            Asia-Pacific Journal of Business Venturing and Entrepreneurship, 10(1), 175-185, 2015 |
+            DOI: 10.16972/APJBVE.10.1.201502.175
+        </p>
+    </div>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            The Start-up of Cultural Content Based on Platforms
+            <span class="pub-badge badge-published">Published</span>
+        </p>
+        <p class="pub-meta">
+            Journal of Multi-Cultural Contents Studies, 19, 25-48, 2015 |
+            DOI: 10.15400/mccs.2015.08.19.25
+        </p>
+    </div>
+
+    <h3>Under Review</h3>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            The Institutional Safety Net: How Evolving Institutional Environments Shape the Industry-Region Fit Framework for Startup Performance
+            <span class="pub-badge badge-review">Under Review</span>
+        </p>
+        <p class="pub-meta">
+            Technological Forecasting &amp; Social Change (IF: 15.82) |
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6409519" target="_blank" style="color: var(--primary-light);">SSRN Preprint</a>
+        </p>
+    </div>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            Unbundling Investor Value: Delivery Mechanisms and Asymmetric Resource Revaluation Under Environmental Disruption
+            <span class="pub-badge badge-review">Under Review</span>
+        </p>
+        <p class="pub-meta">
+            Strategic Entrepreneurship Journal (IF: 9.48) |
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6409421" target="_blank" style="color: var(--primary-light);">SSRN Preprint</a>
+        </p>
+    </div>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            Created to Create, Bound to Care: Imago Dei and the Theological Roots of Entrepreneurial Virtue Ethics
+            <span class="pub-badge badge-review">Under Review</span>
+        </p>
+        <p class="pub-meta">
+            Journal of Business Ethics |
+            <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6409638" target="_blank" style="color: var(--primary-light);">SSRN Preprint</a>
+        </p>
+    </div>
+
+    <h3>Books</h3>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            Innovation and Entrepreneurship in the Digital Age
+            <span class="pub-badge badge-book">Book</span>
+        </p>
+        <p class="pub-meta">
+            Chung-Ang University Press, 2015 | ISBN: 978-89-7207-847-0
+        </p>
+    </div>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            Digital Business Planning and Startup Execution
+            <span class="pub-badge badge-book">Book</span>
+        </p>
+        <p class="pub-meta">
+            Chung-Ang University Press, 2015 | ISBN: 978-89-7207-846-3
+        </p>
+    </div>
+
+    <div class="pub-item">
+        <p class="pub-title">
+            Cloud Services and Smart Startups
+            <span class="pub-badge badge-book">Book</span>
+        </p>
+        <p class="pub-meta">
+            Chung-Ang University Press, 2015 | ISBN: 978-89-7207-845-6
+        </p>
+    </div>
+</section>
+
+<!-- TEACHING -->
+<section id="teaching">
+    <h2>Teaching</h2>
+
+    <p>
+        My teaching philosophy centers on experiential learning grounded in real-world entrepreneurial practice. Students don't just study entrepreneurship &mdash; they practice it, guided by insights from my decade-plus of venture capital investing and Fortune 500 experience.
+    </p>
+
+    <h3>Chung-Ang University (2014-2017) &mdash; Assistant Professor &amp; Director, CAU Creative Studio</h3>
+    <div class="highlight-box">
+        <p>
+            As Assistant Professor and founding Director of the CAU Creative Studio, I built a university-wide innovation center that partnered with Microsoft, Google, and Oracle. The center served 500+ students annually, producing over 100 viable business prototypes with several student ventures progressing beyond the classroom to pursue early-stage development. I hosted and organized Microsoft Imagine Cup Korea. Consistently ranked in the Top 10% of teaching evaluations.
+        </p>
+    </div>
+
+    <h3>Dongguk University (2017-2024)</h3>
+    <p>
+        As Visiting/Adjunct Professor at the Convergence Software Institute and Center for Entrepreneurship Education, I integrated venture capital practitioner perspectives into entrepreneurship courses and facilitated industry partnerships with Algorithm Labs (AI startup) and Korea Social Security Information Service for student projects.
+    </p>
+
+    <h3>Courses Taught</h3>
+    <p>
+        Technology Entrepreneurship Capstone Design (semester-long pitch competition guiding students from venture ideation to investment-ready presentations), Startup Strategy, Big Data &amp; Cloud Service Utilization (Microsoft Azure platform), Emerging Trends in Global Entrepreneurship, Convergence Software &amp; Future.
+    </p>
+
+    <h3>Student Impact</h3>
+    <div class="highlight-box">
+        <p>
+            Mentored over 2,000 students on venture development and entrepreneurial practice. Maintained regular office hours and provided mentorship for first-generation college students. Served as judge and organizer for startup bootcamps. Student feedback highlights practical value and accessibility of guidance.
+        </p>
+    </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+    <h2>Professional Experience</h2>
+
+    <div class="timeline-item">
+        <p class="timeline-period">07/2022 - 01/2024</p>
+        <p class="timeline-role">Product Marketing Manager, APAC Regional Digital Store</p>
+        <p class="timeline-org">Microsoft, Seoul</p>
+        <p class="timeline-desc">Developed and executed high-impact partnership strategies to expand Microsoft's digital commerce and streaming ecosystem. Led multi-million-dollar business agreements to drive revenue growth and market expansion across APAC regions.</p>
+    </div>
+
+    <div class="timeline-item">
+        <p class="timeline-period">2017 - 2024</p>
+        <p class="timeline-role">Visiting / Adjunct Professor</p>
+        <p class="timeline-org">Dongguk University, Convergence Software Institute &amp; Center for Entrepreneurship Education</p>
+        <p class="timeline-desc">Taught Technology Entrepreneurship Capstone Design, Startup Strategy, and Convergence Software courses. Facilitated industry partnerships with Algorithm Labs and Korea Social Security Information Service.</p>
+    </div>
+
+    <div class="timeline-item">
+        <p class="timeline-period">2014 - 2017</p>
+        <p class="timeline-role">Assistant Professor &amp; Director, CAU Creative Studio</p>
+        <p class="timeline-org">Chung-Ang University</p>
+        <p class="timeline-desc">Founded innovation center serving 500+ students/year. Produced 100+ viable business prototypes. Hosted Microsoft Imagine Cup Korea. Established educational partnerships with Microsoft, Google, and Oracle.</p>
+    </div>
+
+    <div class="timeline-item">
+        <p class="timeline-period">2011 - 2022</p>
+        <p class="timeline-role">Partner</p>
+        <p class="timeline-org">Perpetiel Capital Partners, New York / Seoul</p>
+        <p class="timeline-desc">Led venture investments across media, streaming, and digital advertising sectors, achieving portfolio returns exceeding 30%. Mentored portfolio company founders on capital raising, market positioning, and operational scaling. Developed extensive network across VC and entrepreneurship ecosystems.</p>
+    </div>
+
+    <div class="timeline-item">
+        <p class="timeline-period">11/2006 - 08/2010</p>
+        <p class="timeline-role">Executive Producer &amp; Business Operations Lead</p>
+        <p class="timeline-org">Microsoft, Consumer &amp; Online Division, Seoul</p>
+        <p class="timeline-desc">Led advertising partnerships and digital media monetization strategies for Microsoft's content platforms. Drove the launch of JoinsMSN, a strategic media collaboration with JoongAng Media Group.</p>
+    </div>
+
+    <div class="timeline-item">
+        <p class="timeline-period">07/2004 - 12/2005</p>
+        <p class="timeline-role">Senior Manager (Team Leader), Content Biz Team</p>
+        <p class="timeline-org">KBS Media, Seoul</p>
+        <p class="timeline-desc">Led digital content monetization and advertising partnerships to enhance KBS's streaming presence.</p>
+    </div>
+
+    <div class="timeline-item">
+        <p class="timeline-period">05/2003 - 07/2004</p>
+        <p class="timeline-role">Assistant Manager, Strategic Planning &amp; New Business Development</p>
+        <p class="timeline-org">GM Korea, Bupyeong</p>
+        <p class="timeline-desc">Conducted strategic planning for CKD expansion to GM regional plants worldwide. Successfully organized the 1st GM Daewoo Global Product Conference, bringing together 200+ executives from 50+ countries.</p>
+    </div>
+
+    <div class="timeline-item">
+        <p class="timeline-period">08/1995 - 08/1997</p>
+        <p class="timeline-role">Researcher, R&amp;D Planning Team</p>
+        <p class="timeline-org">Hyundai Motor Company, Seoul</p>
+        <p class="timeline-desc">Designed and published reports on technology management strategies, supporting R&amp;D innovation initiatives.</p>
+    </div>
+
+    <div class="timeline-item">
+        <p class="timeline-period">Current</p>
+        <p class="timeline-role">Co-Founder</p>
+        <p class="timeline-org">Yellow Garden LLC, New Jersey</p>
+        <p class="timeline-desc">Co-founded premium Korean food company, managing business operations and market development.</p>
+    </div>
+</section>
+
+<!-- PARTNERSHIPS -->
+<section id="partnerships">
+    <h2>Strategic Partnerships &amp; Affiliations</h2>
+
+    <h3>Industry-Academic Partnerships</h3>
+    <div class="partner-grid">
+        <div class="partner-item">
+            <strong>Microsoft</strong>
+            <span>Azure curriculum development, Imagine Cup Korea, technology education programs</span>
+        </div>
+        <div class="partner-item">
+            <strong>Google</strong>
+            <span>Industry-academic partnership for entrepreneurship education</span>
+        </div>
+        <div class="partner-item">
+            <strong>Oracle</strong>
+            <span>Cloud computing curriculum collaboration</span>
+        </div>
+        <div class="partner-item">
+            <strong>Algorithm Labs</strong>
+            <span>AI startup collaboration for student projects and AI education</span>
+        </div>
+        <div class="partner-item">
+            <strong>Korea Social Security Info Service</strong>
+            <span>Government-academia big data partnership</span>
+        </div>
+    </div>
+
+    <h3>Professional Affiliations</h3>
+    <p>
+        Korean Society of Business Venturing and Entrepreneurship, Korea Association of Startup Studies, Technology Commercialization Coordinator (TCC) certified by Korea Valuation Association (2015).
+    </p>
+</section>
+
+<!-- CV -->
+<section id="cv">
+    <h2>CV &amp; Education</h2>
+    <p>
+        <!-- Replace with actual CV PDF link -->
+        <a href="CV_Taehyun_Lee_2026.pdf" style="color: var(--primary-light); font-weight: 600;">Download CV (PDF)</a>
+    </p>
+
+    <h3>Education</h3>
+    <p><strong>PhD</strong>, Technology Entrepreneurship Management &mdash; Dongguk University, Seoul (2026)</p>
+    <p style="margin-left: 1rem; font-size: 0.95rem; color: var(--text-light); margin-top: -0.5rem;">
+        <em>Dissertation: &ldquo;Startup Success Drivers in Regional Ecosystems: Empirical Validation of the Industry-Region Fit Framework&rdquo;</em>
+    </p>
+    <p><strong>Graduate Certificate</strong>, Entrepreneurial Leadership &mdash; Stanford University (In Progress, GPA: 3.5)</p>
+    <p><strong>MBA</strong>, Finance &amp; Management Information Systems &mdash; Northeastern University, Boston</p>
+    <p><strong>BA</strong>, Business Administration &mdash; Chung-Ang University, Seoul</p>
+
+    <h3>Skills &amp; Competencies</h3>
+    <p>
+        <strong>Teaching:</strong> Experiential pedagogy, venture creation programs, student mentorship, curriculum development, multiple modalities.
+        <strong>Research:</strong> Entrepreneurial ecosystems, venture scaling, institutional theory, quantitative methods.
+        <strong>Innovation Leadership:</strong> Center operations, program development, partnership cultivation, community engagement.
+        <strong>Languages:</strong> Fluent English and Korean.
+    </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact</h2>
+    <p>I welcome inquiries about research collaboration, speaking engagements, and academic positions.</p>
+    <p><strong>Email:</strong> <a href="mailto:taehyun.dreamer@gmail.com" style="color: var(--primary-light);">taehyun.dreamer@gmail.com</a></p>
+    <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/taehyun-lee-2604532b/" target="_blank" style="color: var(--primary-light);">linkedin.com/in/taehyun-lee</a></p>
+    <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=xWBs5KwAAAAJ" target="_blank" style="color: var(--primary-light);">Google Scholar Profile</a></p>
+    <p><strong>SSRN:</strong> <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7208066" target="_blank" style="color: var(--primary-light);">SSRN Author Page</a></p>
+    <p><strong>ORCID:</strong> <a href="https://orcid.org/0009-0007-9106-5115" target="_blank" style="color: var(--primary-light);">0009-0007-9106-5115</a></p>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Taehyun Lee, PhD. All rights reserved.</p>
+    <p style="margin-top: 0.5rem;">
+        <a href="https://www.linkedin.com/in/taehyun-lee-2604532b/" target="_blank">LinkedIn</a> &middot;
+        <a href="https://papers.ssrn.com/sol3/cf_dev/AbsByAuth.cfm?per_id=7208066" target="_blank">SSRN</a> &middot;
+        <a href="https://scholar.google.com/citations?user=xWBs5KwAAAAJ" target="_blank">Google Scholar</a> &middot;
+        <a href="https://orcid.org/0009-0007-9106-5115" target="_blank">ORCID</a> &middot;
+        <a href="mailto:taehyun.dreamer@gmail.com">Email</a>
+    </p>
+</footer>
+
+</body>
+</html>
