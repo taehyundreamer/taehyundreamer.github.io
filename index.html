@@ -129,6 +129,78 @@
     }
     </script>
 
+    <!-- NewsArticle Markup for Media Coverage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "Media Coverage of Dr. Taehyun Lee",
+        "description": "News articles and press coverage featuring Dr. Taehyun Lee and the CAU Creative Studio",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@type": "NewsArticle",
+                    "headline": "글로벌 기업 손잡고 세계 시장이 원하는 창의 인재 키운다",
+                    "publisher": {"@type": "Organization", "name": "동아일보 (Dong-A Ilbo)"},
+                    "datePublished": "2015-07-02",
+                    "url": "https://www.donga.com/news/Society/article/all/20150702/72231993/1",
+                    "about": {"@type": "Person", "name": "Dr. Taehyun Lee"}
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@type": "NewsArticle",
+                    "headline": "김기석 와이크라우드펀딩 대표",
+                    "publisher": {"@type": "Organization", "name": "Forbes Korea (포브스코리아)"},
+                    "datePublished": "2016-10-27",
+                    "url": "https://www.forbeskorea.co.kr/news/articleView.html?idxno=313927",
+                    "mentions": {"@type": "Person", "name": "Dr. Taehyun Lee"}
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 3,
+                "item": {
+                    "@type": "NewsArticle",
+                    "headline": "중앙대, 요즈마와 스타트업 캠퍼스 설립 MOU 체결",
+                    "publisher": {"@type": "Organization", "name": "아주경제 (Aju Business Daily)"},
+                    "datePublished": "2015-08-19",
+                    "url": "https://www.ajunews.com/view/20150819141353569",
+                    "about": {"@type": "Organization", "name": "CAU Creative Studio"}
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 4,
+                "item": {
+                    "@type": "NewsArticle",
+                    "headline": "중앙대, 크리에이티브 스튜디오 개소식 개최",
+                    "publisher": {"@type": "Organization", "name": "아주경제 (Aju Business Daily)"},
+                    "datePublished": "2015-06-30",
+                    "url": "https://www.ajunews.com/view/20150630141754216",
+                    "about": {"@type": "Organization", "name": "CAU Creative Studio"}
+                }
+            },
+            {
+                "@type": "ListItem",
+                "position": 5,
+                "item": {
+                    "@type": "NewsArticle",
+                    "headline": "중앙대, 구글과 협력 크리에이티브 스튜디오 설립",
+                    "publisher": {"@type": "Organization", "name": "아주경제 (Aju Business Daily)"},
+                    "datePublished": "2014-09-29",
+                    "url": "https://www.ajunews.com/view/20140929102001244",
+                    "about": {"@type": "Organization", "name": "CAU Creative Studio"}
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- ScholarlyArticle Markup -->
     <script type="application/ld+json">
     {
@@ -444,6 +516,88 @@
             color: var(--text-light);
         }
 
+        /* Media & Press */
+        .media-item {
+            display: flex;
+            gap: 1.2rem;
+            padding: 1.2rem 0;
+            border-bottom: 1px solid var(--border);
+            align-items: flex-start;
+        }
+
+        .media-item:last-child { border-bottom: none; }
+
+        .media-source {
+            flex-shrink: 0;
+            width: 100px;
+            text-align: center;
+            padding: 0.8rem 0.5rem;
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+
+        .media-source .source-name {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            display: block;
+        }
+
+        .media-source .source-date {
+            font-family: 'Arial', sans-serif;
+            font-size: 0.7rem;
+            color: var(--text-light);
+            margin-top: 0.2rem;
+        }
+
+        .media-body {
+            flex: 1;
+        }
+
+        .media-body .media-title {
+            font-weight: 600;
+            color: var(--text);
+            margin-bottom: 0.3rem;
+            line-height: 1.4;
+        }
+
+        .media-body .media-title a {
+            color: var(--text);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .media-body .media-title a:hover {
+            color: var(--primary-light);
+        }
+
+        .media-body .media-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            line-height: 1.5;
+        }
+
+        .media-badge {
+            display: inline-block;
+            font-family: 'Arial', sans-serif;
+            font-size: 0.65rem;
+            padding: 0.1rem 0.4rem;
+            border-radius: 3px;
+            font-weight: 600;
+            margin-left: 0.3rem;
+            vertical-align: middle;
+        }
+
+        .badge-named { background: #D5F5E3; color: #1E8449; }
+        .badge-featured { background: #D6EAF8; color: #1B4F72; }
+
+        @media (max-width: 480px) {
+            .media-item { flex-direction: column; gap: 0.5rem; }
+            .media-source { width: auto; text-align: left; display: flex; gap: 0.5rem; align-items: center; }
+        }
+
         /* Footer */
         footer {
             background: var(--primary);
@@ -486,6 +640,7 @@
             <li><a href="#teaching">Teaching</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#partnerships">Partners</a></li>
+            <li><a href="#media">Media</a></li>
             <li><a href="#cv">CV</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -516,7 +671,7 @@
 <section id="about">
     <h2>About</h2>
     <p>
-        I hold a rare combination of deep venture capital experience, Fortune 500 corporate strategy, hands-on university teaching, and rigorous academic research in entrepreneurship. Over the past three decades, I have invested in startups, led digital business strategy at Microsoft, taught thousands of students to think entrepreneurially, and developed new theoretical frameworks to explain why startups succeed in some regions but not others.
+        Dr. Taehyun Lee brings a rare combination of deep venture capital experience, Fortune 500 corporate strategy, hands-on university teaching, and rigorous academic research in entrepreneurship. Over the past three decades, he has invested in startups, led digital business strategy at Microsoft, taught thousands of students to think entrepreneurially, and developed new theoretical frameworks to explain why startups succeed in some regions but not others.
     </p>
 
     <div class="stats">
@@ -539,7 +694,7 @@
     </div>
 
     <p>
-        My career began as an R&amp;D planning researcher at Hyundai Motor Company, followed by strategic roles at GM Korea and KBS Media. I then spent nearly a decade at Microsoft Korea in two separate stints &mdash; first as Executive Producer launching JoinsMSN, later as Product Marketing Manager for the APAC Regional Digital Store. In between, I spent over a decade as a Partner at Perpetiel Capital Partners, investing in AI, media, and digital technology startups. The patterns I observed in successful and failed ventures led me to academia, where I could study these dynamics systematically while sharing practical insights with the next generation of entrepreneurs.
+        Dr. Lee's career began as an R&amp;D planning researcher at Hyundai Motor Company, followed by strategic roles at GM Korea and KBS Media. He spent nearly a decade at Microsoft Korea in two separate stints &mdash; first as Executive Producer launching JoinsMSN, later as Product Marketing Manager for the APAC Regional Digital Store. In parallel, he served over a decade as a Partner at Perpetiel Capital Partners, investing in AI, media, and digital technology startups. The patterns he observed in successful and failed ventures drew him to academia, where he could study these dynamics systematically while sharing practical insights with the next generation of entrepreneurs.
     </p>
 </section>
 
@@ -550,7 +705,7 @@
     <h3>Industry-Region Fit Framework</h3>
     <div class="highlight-box">
         <p>
-            My primary research introduces the <strong>Industry-Region Fit (IRF) Framework</strong>, which explains how the alignment between a startup's industry characteristics and its regional ecosystem features drives venture success. Using a dataset of 1,600 startups across four major U.S. innovation hubs (Silicon Valley, Boston, New York, Austin), this work provides empirical evidence that regional context is not merely a backdrop but an active determinant of startup outcomes.
+            Dr. Lee's primary research introduces the <strong>Industry-Region Fit (IRF) Framework</strong>, which explains how the alignment between a startup's industry characteristics and its regional ecosystem features drives venture success. Using a dataset of 1,600 startups across four major U.S. innovation hubs (Silicon Valley, Boston, New York, Austin), this work provides empirical evidence that regional context is not merely a backdrop but an active determinant of startup outcomes.
         </p>
     </div>
 
@@ -689,19 +844,19 @@
     <h2>Teaching</h2>
 
     <p>
-        My teaching philosophy centers on experiential learning grounded in real-world entrepreneurial practice. Students don't just study entrepreneurship &mdash; they practice it, guided by insights from my decade-plus of venture capital investing and Fortune 500 experience.
+        Dr. Lee's teaching philosophy centers on experiential learning grounded in real-world entrepreneurial practice. Students don't just study entrepreneurship &mdash; they practice it, guided by insights from his decade-plus of venture capital investing and Fortune 500 experience.
     </p>
 
     <h3>Chung-Ang University (2014-2017) &mdash; Assistant Professor &amp; Director, CAU Creative Studio</h3>
     <div class="highlight-box">
         <p>
-            As Assistant Professor and founding Director of the CAU Creative Studio, I built a university-wide innovation center that partnered with Microsoft, Google, and Oracle. The center served 500+ students annually, producing over 100 viable business prototypes with several student ventures progressing beyond the classroom to pursue early-stage development. I hosted and organized Microsoft Imagine Cup Korea. Consistently ranked in the Top 10% of teaching evaluations.
+            As Assistant Professor and founding Director of the CAU Creative Studio, Dr. Lee built a university-wide innovation center partnering with Microsoft, Google, and Oracle. The center served 500+ students annually, producing over 100 viable business prototypes with several student ventures progressing beyond the classroom to pursue early-stage development. He hosted and organized Microsoft Imagine Cup Korea and was consistently ranked in the Top 10% of teaching evaluations.
         </p>
     </div>
 
     <h3>Dongguk University (2017-2024)</h3>
     <p>
-        As Visiting/Adjunct Professor at the Convergence Software Institute and Center for Entrepreneurship Education, I integrated venture capital practitioner perspectives into entrepreneurship courses and facilitated industry partnerships with Algorithm Labs (AI startup) and Korea Social Security Information Service for student projects.
+        As Visiting/Adjunct Professor at the Convergence Software Institute and Center for Entrepreneurship Education, Dr. Lee integrated venture capital practitioner perspectives into entrepreneurship courses and facilitated industry partnerships with Algorithm Labs (AI startup) and Korea Social Security Information Service for student projects.
     </p>
 
     <h3>Courses Taught</h3>
@@ -813,6 +968,96 @@
     </p>
 </section>
 
+<!-- MEDIA & PRESS -->
+<section id="media">
+    <h2>Media &amp; Press Coverage</h2>
+    <p>Selected media coverage documenting the CAU Creative Studio initiative, global industry partnerships, and entrepreneurship education programs.</p>
+
+    <div class="media-item">
+        <div class="media-source">
+            <span class="source-name">동아일보</span>
+            <span class="source-date">2015.07.02</span>
+        </div>
+        <div class="media-body">
+            <p class="media-title">
+                <a href="https://www.donga.com/news/Society/article/all/20150702/72231993/1" target="_blank">글로벌 기업 손잡고 세계 시장이 원하는 창의 인재 키운다</a>
+                <span class="media-badge badge-named">Named</span>
+            </p>
+            <p class="media-desc">Feature article on CAU Creative Studio's collaboration with Microsoft, Google, and other global partners. Dr. Taehyun Lee quoted as LINC project professor on the vision behind practice-oriented entrepreneurship education.</p>
+        </div>
+    </div>
+
+    <div class="media-item">
+        <div class="media-source">
+            <span class="source-name">Forbes Korea</span>
+            <span class="source-date">2016.10</span>
+        </div>
+        <div class="media-body">
+            <p class="media-title">
+                <a href="https://www.forbeskorea.co.kr/news/articleView.html?idxno=313927" target="_blank">김기석 와이크라우드펀딩 대표</a>
+                <span class="media-badge badge-named">Named</span>
+            </p>
+            <p class="media-desc">Forbes Korea feature on crowdfunding pioneer CEO Kim Ki-seok, highlighting Dr. Lee's "Practical Entrepreneurship" course at Chung-Ang University where students conducted live crowdfunding campaigns as part of coursework.</p>
+        </div>
+    </div>
+
+    <div class="media-item">
+        <div class="media-source">
+            <span class="source-name">아주경제</span>
+            <span class="source-date">2015.08.19</span>
+        </div>
+        <div class="media-body">
+            <p class="media-title">
+                <a href="https://www.ajunews.com/view/20150819141353569" target="_blank">중앙대, 요즈마와 스타트업 캠퍼스 설립 MOU 체결</a>
+                <span class="media-badge badge-featured">Featured</span>
+            </p>
+            <p class="media-desc">Coverage of the MOU signing between Chung-Ang University and Israel's Yozma Group to establish a startup campus. The CAU Creative Studio served as the testbed for Israeli-style entrepreneurship education programs.</p>
+        </div>
+    </div>
+
+    <div class="media-item">
+        <div class="media-source">
+            <span class="source-name">CAU NEWS</span>
+            <span class="source-date">2015.08.19</span>
+        </div>
+        <div class="media-body">
+            <p class="media-title">
+                <a href="https://news.cau.ac.kr/cms/FR_CON/BoardView.do?MENU_ID=10&BBS_SEQ=3941" target="_blank">CAU Creative Studio with Yozma 설립 MOU 체결식 개최</a>
+                <span class="media-badge badge-featured">Featured</span>
+            </p>
+            <p class="media-desc">Official university announcement of the Yozma Group MOU ceremony held at the President's office, Heukseok Campus. Documents the strategic partnership between CAU Creative Studio and Israel's leading venture organization.</p>
+        </div>
+    </div>
+
+    <div class="media-item">
+        <div class="media-source">
+            <span class="source-name">아주경제</span>
+            <span class="source-date">2015.06.30</span>
+        </div>
+        <div class="media-body">
+            <p class="media-title">
+                <a href="https://www.ajunews.com/view/20150630141754216" target="_blank">중앙대, 크리에이티브 스튜디오 개소식 개최</a>
+                <span class="media-badge badge-featured">Featured</span>
+            </p>
+            <p class="media-desc">Coverage of the CAU Creative Studio grand opening ceremony at R&amp;D Center, Heukseok Campus. Google YouTube, Microsoft, and Oracle executives participated in the launch event.</p>
+        </div>
+    </div>
+
+    <div class="media-item">
+        <div class="media-source">
+            <span class="source-name">아주경제</span>
+            <span class="source-date">2014.09.29</span>
+        </div>
+        <div class="media-body">
+            <p class="media-title">
+                <a href="https://www.ajunews.com/view/20140929102001244" target="_blank">중앙대, 구글과 협력 크리에이티브 스튜디오 설립</a>
+                <span class="media-badge badge-featured">Featured</span>
+            </p>
+            <p class="media-desc">First announcement of the CAU Creative Studio establishment through a cooperation agreement between Chung-Ang University's LINC project team and Google YouTube to foster content industry professionals.</p>
+        </div>
+    </div>
+</section>
+
 <!-- CV -->
 <section id="cv">
     <h2>CV &amp; Education</h2>
@@ -842,7 +1087,7 @@
 <!-- CONTACT -->
 <section id="contact">
     <h2>Contact</h2>
-    <p>I welcome inquiries about research collaboration, speaking engagements, and academic positions.</p>
+    <p>Dr. Lee welcomes inquiries about research collaboration, speaking engagements, and academic positions.</p>
     <p><strong>Email:</strong> <a href="mailto:taehyun.dreamer@gmail.com" style="color: var(--primary-light);">taehyun.dreamer@gmail.com</a></p>
     <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/taehyun-lee-phd-2604532b/" target="_blank" style="color: var(--primary-light);">linkedin.com/in/taehyun-lee</a></p>
     <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=k7ntbX0AAAAJ" target="_blank" style="color: var(--primary-light);">Google Scholar Profile</a></p>
