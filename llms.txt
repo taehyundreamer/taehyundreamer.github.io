@@ -14,6 +14,7 @@
 - PhD, Technology Entrepreneurship Management — Dongguk University, Seoul
   - Dissertation: "Startup Success Drivers in Regional Ecosystems: Empirical Validation of the Industry-Region Fit Framework"
   - Dataset: 1,600 startups across 4 major U.S. innovation hubs
+  - Current research extends the dataset to 3,500+ U.S. startups
 - Graduate Certificate, Entrepreneurial Leadership — Stanford University (In Progress)
 - MBA, Finance & Management Information Systems — Northeastern University, Boston (D'Amore-McKim School of Business)
 - BA, Business Administration — Chung-Ang University, Seoul
@@ -22,7 +23,8 @@
 - Primary framework: Industry-Region Fit (IRF) Framework
 - Research areas: Startup ecosystems, venture performance, entrepreneurship education, institutional support mechanisms, venture capital, regional innovation
 - Published in: Journal of Management, Spirituality & Religion (JMSR); Korean Journal of Entrepreneurship; Asia-Pacific Journal of Business Venturing and Entrepreneurship
-- Under review at: Technological Forecasting & Social Change (IF: 15.82); Strategic Entrepreneurship Journal (IF: 9.48); Journal of Business Ethics
+- Under review at: Industry and Innovation
+- Research summary (PDF): https://taehyundreamer.github.io/Taehyun_Lee_IRF_Research_Summary.pdf
 - Author of 3 academic books on innovation and entrepreneurship (Chung-Ang University Press, 2015)
 
 ## Professional Experience
@@ -37,7 +39,6 @@
 
 ## Key Achievements
 - Mentored 2,000+ students on venture development
-- 20%+ student startup rate at CAU Creative Studio
 - Hosted Microsoft Imagine Cup Korea
 - Top 10% teaching evaluations consistently
 - 30%+ ROI as VC Partner over a decade
